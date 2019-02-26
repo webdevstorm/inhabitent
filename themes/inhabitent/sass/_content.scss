@@ -1,0 +1,295 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+
+/* Posts and pages */
+
+.front-hero-image {
+  background-image: url('../../images/home-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-tent-image {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  max-width: 50px;
+  max-height: 50px;
+  height: auto;
+}
+.front-tent-image-green {
+  background-image: url('../images/logos/inhabitent-logo-tent.svg');
+  display: flex;
+  position: absolute;
+  max-width: 50px;
+  max-height: 50px;
+  padding-top: 0;
+}
+.front-canoe-image {
+  background-image: url('../images/adventure-photos/canoe-girl.jpg');
+}
+.front-beach-image {
+  background-image: url('../images/adventure-photos/beach-bonfire.jpg');
+}
+.front-mountain-image {
+  background-image: url('../images/adventure-photos/mountain-hikers.jpg');
+}
+.front-sky-image {
+  background-image: url('../images/adventure-photos/night-sky.jpg');
+}
+
+.adventure-grid > div {
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  grid-gap: 1em;
+}
+.adventure-grid > div:nth-child(odd) {
+  background: #eee;
+}
+
+.shop-stuff img {
+  width: 25%;
+}
+.front-page-journal {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 60px;
+  .front-page-journal a {
+    position: absolute;
+    padding-top: 250px;
+  }
+}
+.front-page-journal img {
+  max-height: 250px;
+  max-width: 375px;
+}
+.shop-stuff {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.shop-stuff-containers {
+  text-align: center;
+  max-width: 272px;
+  border-bottom: solid 2px;
+  border-top: solid 2px;
+  border-right: solid 1px;
+  border-left: solid 1px;
+  border-color: grey;
+  &:hover {
+    border: 1px solid #d99054;
+  }
+}
+.adventure-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.journal {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+a:active,
+a:focus {
+  color: #248a83;
+}
+a:hover {
+  color: #808080;
+}
+
+.widget-area {
+  border-left: 1px solid #e1e1e1;
+  padding-top: 120px;
+  padding-left: 150px;
+  p {
+    display: inline;
+  }
+  i {
+    color: #404040;
+  }
+  ul {
+    display: inline;
+  }
+  a {
+    color: #248a83;
+  }
+}
+
+.widget-title {
+  color: #2f1339;
+}
+
+.taxonomy-description {
+  display: none;
+}
+.site-header {
+  display: flex;
+  padding-right: 0;
+
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  border: 1px solid #e1e1e1;
+}
+.search-submit {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 121em;
+  top: 16px;
+  &:visited,
+  &:hover {
+    background-color: transparent;
+  }
+}
+.entry-header {
+  position: relative;
+  h1 {
+    color: #fff;
+  }
+}
+.hero-image-header {
+  height: 100vh;
+  width: 100%;
+}
+
+.page-template-about {
+  .entry-header h2 a {
+    color: #2f1339;
+    position: absolute;
+  }
+  .entry-content h2 {
+    color: #2f1339;
+  }
+  .entry-content {
+    text-align: center;
+  }
+  .entry-content p {
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+    justify-content: center;
+  }
+  .page-title {
+    display: none;
+  }
+}
+
+.article {
+  position: relative;
+  text-align: center;
+}
+
+.entry-content h2 {
+  color: #2f1339;
+}
+
+.search-field {
+  display: none;
+}
+.search-form {
+  border: none;
+}
+fieldset {
+  border: none;
+}
+
+.page-title {
+  display: none;
+}
+.thumbnail-wrapper img {
+  width: 250px;
+  height: 250px;
+  height: auto;
+  display: flex;
+}
+
+.sticky {
+  display: block;
+}
+
+.hentry {
+  margin: 0 0 $base__space-unit;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: $base__space-unit 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 $base__space-unit;
+}
+
+/* Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none;
+}
+
+/* Comments */
+
+.comment-content a {
+  word-wrap: break-word;
+}
+.bypostauthor {
+  display: block;
+}
+.blog {
+  .site-content {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+  }
+}
+.page-template-default {
+  .nav-menu {
+    color: white;
+  }
+  .section-titles {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #2f1339;
+  }
+  .site-content {
+    display: flex;
+  }
+}
+
+.post-type-archive {
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.3em;
+    padding-top: 300px;
+    padding-bottom: 80px;
+  }
+  img {
+    height: 200px;
+    width: 80%;
+  }
+}

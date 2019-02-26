@@ -1,0 +1,29 @@
+.blog {
+  .entry-title a {
+    text-transform: uppercase;
+    top: 40px;
+    text-decoration: none;
+    position: absolute;
+    background: $color_brand;
+    color: white;
+    padding-right: 80px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .content-area {
+    padding-top: 120px;
+  }
+  .entry-meta {
+    right: 0px;
+    bottom: 7px;
+    padding: 10px 25px;
+    text-decoration: none;
+    position: absolute;
+    background: $color_brand;
+    color: white;
+    a {
+      text-transform: capitalize;
+    }
+  }
+}

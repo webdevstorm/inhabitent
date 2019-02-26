@@ -1,0 +1,53 @@
+footer {
+  background: url('../../images/dark-wood@2x.png') repeat-x;
+  padding: 2%;
+  height: 60vh;
+  line-height: 2em;
+  h2,
+  h3 {
+    color: #d99054;
+  }
+  span,
+  i {
+    color: white;
+  }
+
+  .site-info {
+    display: flex;
+  }
+
+  .contact-info {
+    color: white;
+    span {
+      a {
+        text-decoration: none;
+        &:visited,
+        &:link {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .hours-info {
+    color: white;
+    padding-left: 3%;
+  }
+
+  .copyright {
+    text-align: center;
+    margin: auto;
+    width: 1120px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .front-dark-image {
+    background: url('../images/logos/inhabitent-logo-text.svg');
+  }
+  .front-dark-logo img {
+    height: auto;
+    position: relative;
+    bottom: 140px;
+    left: 64em;
+  }
+}
