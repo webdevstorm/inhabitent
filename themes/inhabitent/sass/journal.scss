@@ -1,4 +1,5 @@
-.blog {
+.blog,
+.archive {
   .entry-title a {
     text-transform: uppercase;
     top: 40px;
@@ -14,6 +15,7 @@
   .content-area {
     padding-top: 120px;
   }
+
   .entry-meta {
     right: 0px;
     bottom: 7px;
@@ -26,4 +28,19 @@
       text-transform: capitalize;
     }
   }
+}
+.archive-link a {
+  border: 1px solid black;
+  color: black;
+  padding: 0.55rem 0.75rem;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $color_brand;
+    border: $color_brand;
+    color: #fff;
+  }
+}
+.archive-article {
+  padding-bottom: 50px;
 }

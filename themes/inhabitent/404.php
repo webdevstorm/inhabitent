@@ -18,10 +18,14 @@ get_header(); ?>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
+					<h2>oops! that page can't be found.</h2>
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
-					<?php get_search_form(); ?>
-
+					<label>
+			<input type="search" class="search-field" placeholder="SEARCH ..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+		</label>
+		<span class="screen-reader-text"><?php echo esc_html( 'Search' ); ?></span>
+	
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 
 					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
@@ -50,6 +54,7 @@ get_header(); ?>
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

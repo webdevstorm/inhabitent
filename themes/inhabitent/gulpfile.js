@@ -10,8 +10,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
 const babel = require('gulp-babel');
 
-// Create basic Gulp tasks
-
 gulp.task('sass', function () {
   return gulp
     .src('./sass/style.scss', { sourcemaps: true })
@@ -58,8 +56,6 @@ gulp.task(
       .pipe(gulp.dest('./build/js'));
   })
 );
-
-// Set-up BrowserSync and watch
 
 gulp.task('browser-sync', function () {
   const files = [

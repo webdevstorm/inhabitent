@@ -18,17 +18,28 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
+			</header>
 
-
-
-			<?php /* Start the Loop */ ?>
+			<div class ="shop-titles">
+<h2>shop stuff</h2>
+<div class="shop-links">
+<a href="http://localhost:8888/product_type/do/"> do</a>
+<a href="http://localhost:8888/product_type/eat/"> eat</a>
+<a href="http://localhost:8888/product_type/sleep/"> sleep</a>
+<a href="http://localhost:8888/product_type/wear/"> wear</a>
+</div>
+</div>
+		
 			<div class="product-grid">
 			<?php while ( have_posts() ) : the_post(); ?>
-					<div>
+					<div class="product-post">
                      <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
-                     <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-                     <span class="price"><?php echo esc_html( CFS()->get( 'product-price' ) ); ?></span></div>
+					 <div class="product-post-info">
+				     <?php the_title( '<h3 class="product-title">', '</h3>' ); ?> 
+					 <div class="dots">	  </div>
+                     <span class="price"><?php echo esc_html( CFS()->get( 'product-price' ) ); ?></span>
+					 </div>
+					 </div>
 			  
 	   
 			   <?php endwhile; ?>
@@ -39,8 +50,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 
 <?php get_footer(); ?>

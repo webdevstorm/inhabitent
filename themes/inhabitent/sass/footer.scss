@@ -1,7 +1,6 @@
 footer {
   background: url('../../images/dark-wood@2x.png') repeat-x;
   padding: 2%;
-  height: 60vh;
   line-height: 2em;
   h2,
   h3 {
@@ -14,10 +13,13 @@ footer {
 
   .site-info {
     display: flex;
+    padding-left: 5%;
   }
 
   .contact-info {
     color: white;
+    display: flex;
+    flex-direction: column;
     span {
       a {
         text-decoration: none;
@@ -30,7 +32,9 @@ footer {
   }
   .hours-info {
     color: white;
-    padding-left: 3%;
+    padding-left: 8%;
+    display: flex;
+    flex-direction: column;
   }
 
   .copyright {
@@ -45,9 +49,14 @@ footer {
     background: url('../images/logos/inhabitent-logo-text.svg');
   }
   .front-dark-logo img {
-    height: auto;
-    position: relative;
+    max-height: 250px;
     bottom: 140px;
-    left: 64em;
+    position: relative;
+    left: 70em;
   }
+}
+.front-dark-logo {
+  width: 400px;
+  display: flex;
+  justify-content: flex-end;
 }

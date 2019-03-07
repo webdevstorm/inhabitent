@@ -1,7 +1,7 @@
 {
   "name": "Inhabitent",
   "version": "1.1.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": "A website for a camping supply company using Wordpress",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.23.6",
@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redacademy/redstarter.git"
+    "url": "https://github.com/webdevstorm/inhabitent"
   },
   "author": "Sage",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
+    "url": "https://github.com/webdevstorm/inhabitent/issues"
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": "http://localhost:8888/"
 }

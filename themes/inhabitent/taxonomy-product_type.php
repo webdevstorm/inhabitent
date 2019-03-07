@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		
 
 		<?php if ( have_posts() ) : ?>
 
@@ -17,32 +18,29 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-
 			</header>
-	
 
-			<section class="archive-article">
-			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-<div class="archive-link"><a href = "<?php the_permalink();?>">read more</a></div>
-</section>
-<section class="archive-article">		
-<?php endwhile; ?>
+
 		
-			<?php the_posts_navigation(); ?>
-
+			<div class="product-grid">
+			<?php while ( have_posts() ) : the_post(); ?>
+					<div>
+                     <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
+                     <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+                     <span class="price"><?php echo esc_html( CFS()->get( 'product-price' ) ); ?></span></div>
+			  
+	   
+			   <?php endwhile; ?>
+			   </div>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-			</section>
-		<?php endif; ?>
 
+		<?php endif; ?>
 
 		</main>
 	</div>
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

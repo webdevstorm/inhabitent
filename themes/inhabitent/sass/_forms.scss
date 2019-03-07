@@ -59,3 +59,30 @@ textarea {
   padding-left: 3px;
   width: 100%;
 }
+.search{
+  form {
+    display: inline-block;
+    // width: 50px;
+    // height: 50px;
+    fieldset {
+      border: none;
+      padding-top: 15px;
+      color:$color_brand;
+      .search-field {
+        transition: all 1s ease-in-out;
+        background-color: transparent;
+        border:none;
+        width: 0;
+        &:focus{
+          outline:none;
+        }
+      }
+      ::placeholder{
+        color:rgba(255, 255, 255, 0.746);
+      }
+      .selected {
+        width: 200px;
+      }
+    }
+  }
+}
