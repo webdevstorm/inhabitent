@@ -40,11 +40,11 @@ get_header(); ?>
            }
          ?>
             
-         <a href = "<?php the_permalink();?>">read entry</a>
+         <a class="post-link" href = "<?php the_permalink();?>">read entry</a>
            <span> <?php 
             the_date();
             echo comments_number();?></span>
-            <a> <?php  the_title(); ?></a>
+          <a class="post-title"> <?php  the_title(); ?></a>
       </div> 
            <?php    endforeach;
                wp_reset_postdata();

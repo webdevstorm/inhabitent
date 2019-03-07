@@ -284,6 +284,9 @@ textarea {
 a {
   text-decoration: none; }
 
+.content-area {
+  width: 100%; }
+
 /* Headings */
 h1,
 h2,
@@ -788,7 +791,7 @@ a {
 
 .shop-stuff-containers {
   text-align: center;
-  max-width: 275px;
+  width: 18%;
   height: 290px;
   border-bottom: solid 2px;
   border-top: solid 2px;
@@ -1001,7 +1004,7 @@ object {
 
 .error404 .search-field {
   display: block;
-  border: 1px solid #d3d3d3; }
+  border: 2px solid #d3d3d3; }
 
 .error404 .page-content {
   padding-top: 120px;
@@ -1127,16 +1130,6 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
   padding-bottom: 60px; }
-  .front-page-journal a {
-    text-transform: uppercase;
-    border: 1px solid;
-    padding: 0.7rem 1.5rem;
-    color: black;
-    text-decoration: none; }
-    .front-page-journal a:hover {
-      background: #248a83;
-      border: #248a83;
-      color: #fff; }
   .front-page-journal img {
     max-height: 250px;
     max-width: 375px; }
@@ -1163,7 +1156,8 @@ object {
   padding-left: 150px; }
 
 .blog .entry-title a,
-.archive .entry-title a {
+.archive .entry-title a,
+.single-post .entry-title a {
   text-transform: uppercase;
   top: 40px;
   text-decoration: none;
@@ -1176,11 +1170,21 @@ object {
   padding-top: 10px; }
 
 .blog .content-area,
-.archive .content-area {
+.archive .content-area,
+.single-post .content-area {
   padding-top: 120px; }
 
+.blog .site-content,
+.archive .site-content,
+.single-post .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px; }
+
 .blog .entry-meta,
-.archive .entry-meta {
+.archive .entry-meta,
+.single-post .entry-meta {
   right: 0px;
   bottom: 7px;
   padding: 10px 25px;
@@ -1189,7 +1193,8 @@ object {
   background: #248a83;
   color: white; }
   .blog .entry-meta a,
-  .archive .entry-meta a {
+  .archive .entry-meta a,
+  .single-post .entry-meta a {
     text-transform: capitalize; }
 
 .archive-link a {
@@ -1204,6 +1209,31 @@ object {
 
 .archive-article {
   padding-bottom: 50px; }
+
+.front-page-journal .journal-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.front-page-journal .post-title {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #248a83;
+  color: white; }
+
+.front-page-journal .content-area {
+  padding-top: 120px; }
+
+.front-page-journal .post-link {
+  text-decoration: none;
+  background: #248a83;
+  color: white; }
+  .front-page-journal .post-link a {
+    text-transform: capitalize; }
 
 footer {
   background: url("../../images/dark-wood@2x.png") repeat-x;

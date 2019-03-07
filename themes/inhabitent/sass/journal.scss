@@ -1,5 +1,6 @@
 .blog,
-.archive {
+.archive,
+.single-post {
   .entry-title a {
     text-transform: uppercase;
     top: 40px;
@@ -15,6 +16,12 @@
   .content-area {
     padding-top: 120px;
   }
+  
+    .site-content {
+      display: flex ;
+      padding-top: 60px;
+    }
+ 
 
   .entry-meta {
     right: 0px;
@@ -43,4 +50,37 @@
 }
 .archive-article {
   padding-bottom: 50px;
+}
+.front-page-journal {
+  .journal-posts {
+    display: flex;
+    flex-direction: column;
+  }
+  .post-title {
+    text-transform: uppercase;
+    //top: 40px;
+    text-decoration: none;
+    //position: absolute;
+    background: $color_brand;
+    color: white;
+    //padding-right: 80px;
+    //padding-left: 20px;
+    //padding-bottom: 10px;
+    //padding-top: 10px;
+  }
+  .content-area {
+    padding-top: 120px;
+  }
+
+  .post-link {
+    //right: 0px;
+    //bottom: 7px;
+    //padding: 10px 25px;
+    text-decoration: none;
+    background: $color_brand;
+    color: white;
+    a {
+      text-transform: capitalize;
+    }
+  }
 }
