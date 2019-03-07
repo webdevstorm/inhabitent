@@ -72,6 +72,7 @@
     .site-content {
       display: flex;
       padding-top: 60px;
+      
     }
   }
   .shop-titles {
@@ -189,5 +190,16 @@
   }
   .site-main {
     padding-top: 120px;
+  }
+}
+.product-type-grid {
+  display: flex;
+
+  border: 1px solid #e1e1e1;
+}
+.type-post {
+  .content-area {
+    display: flex;
+    padding-left: 150px;
   }
 }

@@ -23,13 +23,15 @@ get_header(); ?>
 
 
 		
-			<div class="product-grid">
+			<div class="product-type-grid">
 			<?php while ( have_posts() ) : the_post(); ?>
 					<div>
                      <a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php the_post_thumbnail( 'large' ); ?></a>
-                     <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+					 <div class="product-post-info">
+					 <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+					 <div class="dots">	  </div>
                      <span class="price"><?php echo esc_html( CFS()->get( 'product-price' ) ); ?></span></div>
-			  
+			  <div>
 	   
 			   <?php endwhile; ?>
 			   </div>

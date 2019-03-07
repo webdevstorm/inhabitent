@@ -1150,6 +1150,18 @@ object {
 .search-results .site-main {
   padding-top: 120px; }
 
+.product-type-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e1e1e1; }
+
+.type-post .content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 150px; }
+
 .blog .entry-title a,
 .archive .entry-title a {
   text-transform: uppercase;
