@@ -33,5 +33,4 @@ Must have server and gulp and run npm install inside correct directory !
 -Debug Bar
 -Custom Field Suite
 -Show Current Template
-<p>
-<a> href="/webdevstorm/inhabitent/blob/master/themes/inhabitent/screenshot.png"><img src="/webdevstorm/inhabitent/raw/master/themes/inhabitent/screenshot.png"></a></p>
+![alt text](themes/inhabitent.screenshot.png)
